@@ -8,7 +8,7 @@ const ingredients = [
 ];
 
 const ingredientsEl = document.querySelector('#ingredients');
-console.log(ingredientsEl);
+// console.log(ingredientsEl);
 // -------- Так делать нельзя !!!------------
 // for (const ingredient of ingredients) {
 //   const itemEl = document.createElement('li');
