@@ -19,7 +19,7 @@ function createBoxes() {
    const boxes = []; 
    const amount = refs.input.value;
   for (let i = 0; i < amount; i += 1) {
-    const box = `<div style="width: ${30 + i * 10}px; height: ${30 + i * 10}px; background-color: ${rndColor()};"></div>`;
+    const box = `<div style="width: ${30 + i * 10}px; height: ${30 + i * 10}px; background-color: ${rndColor()}; margin-bottom: 5px;"></div>`;
     boxes.push(box);
   }
    return refs.boxes.insertAdjacentHTML('beforeend', boxes.join(''));
