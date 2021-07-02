@@ -16,16 +16,21 @@ const images = [
 const makeImagesTemplateMarkup = images => {
   const { url, alt } = images;
   return `
-  <li>
+  <li class="gallery__item">
   <img
   src=${url}
   alt=${alt}
+  width=370px
 />
+
   </li>
   `;
+
 };
 
 const galleryEl = document.querySelector('#gallery');
+galleryEl.classList.add('gallery');
+
 // console.log(gallery);
 //console.log(makeImagesTemplateMarkup(images[0]));
 const makeImagesTemplate = images.map(makeImagesTemplateMarkup).join('');
