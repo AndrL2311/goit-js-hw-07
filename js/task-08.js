@@ -4,8 +4,9 @@ const refs = {
     btnDestroy: document.querySelector('#controls').children[2],
     boxes: document.querySelector('#boxes'),
 };
-
-const rndColor = () => "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
+const rnd256 = () => Math.floor(Math.random() * 256);
+const rndColor = () => "rgb(" + rnd256() + "," + rnd256() + "," + rnd256() + ")";
+// console.log(rndColor());
 
 const createBoxes = (amount) => {
    const boxes = []; 
