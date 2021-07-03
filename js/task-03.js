@@ -20,7 +20,7 @@ const makeImagesTemplateMarkup = images => {
   <img
   src=${url}
   alt=${alt}
-  width=370px
+  width = "440" height = "300"
 />
 
   </li>
